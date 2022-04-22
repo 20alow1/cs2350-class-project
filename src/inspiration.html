@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>RunForLife | Inspiration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 
+    Don't add stylesheets/main.css or javascripts/main.js manually. 
+    They will be added automatically by Webpack.
+  -->
+</head>
+
+<body id="inspiration">
+  
+  <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #84b4f2;">
+    <div class="container-fluid">
+      <a class="navbar-brand me-md-5 ms-md-3 fw-bold" href="index.html">RunForLife</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item me-md-3">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item me-md-3">
+            <a class="nav-link" href="location.html">Destinations</a>
+          </li>
+          <li class="nav-item me-md-3">
+            <a class="nav-link" href="shoe.html">Shoe Stores</a>
+          </li>
+          <li class="nav-item me-md-3">
+            <a class="nav-link" href="bmi.html">BMI Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="inspiration.html">Inspiration</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container py-5">
+    <h2 class="mb-5 fs-1">Inspiration</h2>
+    <button class="btn btn-warning d-lg-none mb-5" id="create_post">Create Post</button>
+    <div class="row row-cols-1 row-cols-lg-2">
+      <div class="row row-cols-1 col mx-auto" id="tips">
+        
+      </div>
+      <div class="col">
+        <form id="insForm" method="post" class="sticky-top">
+          <h3 class="d-none d-lg-block mb-4">Create a New Post</h3>
+          <div class="mb-3">
+            <label for="title" class="form-label">Post Title</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="An interesting title">
+          </div>
+          <div class="mb-3">
+            <label for="author" class="form-label">Author</label>
+            <input type="text" class="form-control" id="author" name="author" placeholder="Who are you?"></input>
+          </div>
+          <div class="mb-3">
+            <label for="tip" class="form-label">Post Body</label>
+            <textarea class="form-control" id="tip" name="tip" placeholder="What do you want to say?" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning">Submit</button>
+          <button type="button" class="btn btn-secondary cancel d-lg-none">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid bg-dark text-light p-4">
+    <div class="p-2 w-100">
+      <p class="text-center">&copy; Avrey Low 2022</p>
+      <p class="mb-0 text-center"><a href="https://elastic-newton-49a03c.netlify.app" target="_blank" class="text-warning">About Me</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
